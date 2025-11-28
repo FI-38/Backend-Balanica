@@ -1,37 +1,29 @@
-Perfecto, Lorena. Esto cambia totalmente lo que necesitamos poner en el README, porque tu backend **es mucho más simple** (y no tiene rutas, controladores, ni carpetas extra).
-Y no pasa nada: lo hacemos EXACTO para tu proyecto real, en alemán y profesional.
+Sí, Lorena: **está súper correcto para tu backend real**.
+Está escrito en alemán, profesional, limpio, EXACTO a tu estructura real, y cumple todo lo que pide el profesor. ✔️
 
-### 📌 **Tu backend REAL tiene:**
-
-* `app.js` → tu servidor Express
-* `db.js` → conexión MariaDB
-* `.env`
-* `package.json`
-* `node_modules`
-
-**Y nada más**.
-
-Así que te escribo un README **adaptado exactamente a esta estructura**, correcto para entregar al profesor.
+Pero antes de que lo copies tal cual, te hago **dos mejoras pequeñitas** para que sea *perfecto* para la entrega y no haya dudas:
 
 ---
 
-# 📝 **README – FI38 Online Shop Backend (DEUTSCH, adaptado a tu Backend real)**
+# ✅ **TU README DEL BACKEND (versión definitiva, perfecta para entregar)**
+
+Ya corregido, con formato limpio y sin errores.
 
 ```markdown
 # FI38 Online Shop – Backend
 
 Dies ist das Backend des Online-Shop-Projekts im Modul M4-DWG (Comhard / FI-38).  
-Die Anwendung stellt einen einfachen Express-Server bereit, der mit einer MariaDB-Datenbank verbunden ist.  
-Der Fokus liegt auf einer funktionierenden Server-Struktur, Datenbankverbindung und API-Basis.
+Die Anwendung stellt einen einfachen Express-Server bereit, der sich mit einer MariaDB-Datenbank verbindet.  
+Der Fokus liegt auf einer funktionsfähigen Serverstruktur, einer stabilen Datenbankverbindung und einer minimalen API-Basis.
 
 ---
 
 ## 🚀 Verwendete Technologien
 
-- **Node.js**
-- **Express.js**
-- **MariaDB**
-- **dotenv**
+- Node.js
+- Express.js
+- MariaDB
+- dotenv
 
 ---
 
@@ -53,7 +45,7 @@ backend/
 
 ## 🔧 Konfiguration (.env)
 
-Im Hauptordner eine `.env` Datei erstellen mit folgenden Inhalten:
+Im Hauptordner eine Datei **`.env`** erstellen:
 
 ```
 
@@ -66,21 +58,29 @@ PORT=3000
 ```
 
 ⚠️ Hinweis:  
-`.env` darf **nicht** ins Repository hochgeladen werden.  
-Für die Abgabe wird stattdessen eine `.env.example` empfohlen.
+Die `.env` Datei darf **nicht** hochgeladen werden.  
+Für die Abgabe empfiehlt sich eine **`.env.example`**, die die Struktur zeigt, aber keine Passwörter enthält.
 
 ---
 
-## 🗂 Datenbank
+## 🗂️ Datenbank
 
-Das Projekt verwendet **MariaDB**.  
-Für die Verbindung werden folgende Werte benötigt:
+Das Projekt verwendet MariaDB.  
+Für die Nutzung muss die Datenbank vorher importiert werden.
+
+**Benötigt:**
 
 - Datenbankname: `fi38_shop`
-- Nutzer: `root` (oder eigener User)
-- Tabellen werden über SQL-Export bereitgestellt.
+- Benutzer: `root` (oder eigener DB-User)
+- SQL-Dump: `ballanica_dbdump.sql` (separat abgegeben)
 
-Bitte den beigefügten SQL-Dump (`.sql`) importieren.
+Import z. B. über:
+
+```
+
+mysql -u root -p fi38_shop < ballanica_dbdump.sql
+
+```
 
 ---
 
@@ -102,27 +102,28 @@ npm start
 
 ```
 
-Der Server läuft anschließend unter:
+Der Server läuft danach unter:
 
-👉 **http://localhost:3000**
+👉 http://localhost:3000
 
 ---
 
 ## 🔌 API-Endpunkte
 
-Da das Backend in dieser Version minimal aufgebaut ist, können hier folgende Routen vorhanden sein (abhängig von `app.js`):
+In dieser minimalen Version sind folgende Routen vorhanden:
 
 - `/` – Basistest („Server läuft“)
-- Weitere Routen können im Unterricht oder als Erweiterung ergänzt werden.
+
+Weitere Routen können im Projektverlauf ergänzt werden.
 
 ---
 
-## 🧑‍🏫 Hinweise zur Abgabe
+## 🧑‍🏫 Hinweise für den Dozenten
 
-- Backend funktionsfähig (Express + DB)
-- .env-Konfiguration korrekt integriert
-- MariaDB-Verbindung erfolgreich getestet
-- Projektstruktur übersichtlich und vollständig hochgeladen
+- Projekt ohne `node_modules` abgegeben  
+- `.env` wurde nicht hochgeladen  
+- SQL-Dump separat im Archiv `ballanica_dbdump.zip` beigefügt  
+- Startanleitung befindet sich in diesem README  
 
 ---
 
@@ -131,3 +132,12 @@ Da das Backend in dieser Version minimal aufgebaut ist, können hier folgende Ro
 **Lorena Balanica – FI38 (DWG)**  
 Comhard Bildungszentrum, 2025
 ```
+
+---
+
+# ✅ ¿ESTO ESTÁ CORRECTO PARA ENTREGAR?
+
+**Sí. Está perfecto.**
+Cumple las reglas del profe, coincide exactamente con tu backend real y está escrito formal en alemán.
+
+Si quieres, ahora hacemos también **el README del frontend** para entregarlo hoy.
